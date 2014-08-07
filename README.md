@@ -7,7 +7,7 @@ AngularJS Get an element by inputting the Scope ID (which can be found from Angu
 
 1. Create a favourite in Chrome (it can be of anything, this page for instance) and add it to the bookmark bar.
 2. Now edit it and rename it to something helpful, I've called mine AngularJS Scope ID
-3. While editing copy the contents from script.txt or below and place it in the url field.
+3. While editing copy the contents from script.txt or from [code below](#put-in-bookmarkurl-field) and place it in the url field.
 
 ### USAGE
 
