@@ -38,7 +38,22 @@ In the console type this function ( ```getElementByScopeId('002')``` ) and the c
 javascript:console.info("Script ready, now use getElementByScopeId('id')");function getElementByScopeId(scopeId) {var i; var scopesInDom = angular.element('.ng-scope'); for (i=0; i < scopesInDom.length; i++) {if (angular.element(scopesInDom[i]).scope().$id === scopeId) { return scopesInDom[i]; } } };
 ~~~
 
-#### PRETIFIED VERSION
+#### PUT IN CHROME DEV CONSOLE
+
+~~~
+getElementByScopeId('002')
+~~~
+
+
+#### WILL OUTPUT
+
+~~~
+> <div class="wrap" ng-controller="MyCtrl">...</div>
+~~~
+
+---
+
+##### PRETIFIED VERSION
 
 ~~~
 javascript: console.info("Script ready, now use getElementByScopeId('id')");
