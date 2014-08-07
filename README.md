@@ -28,8 +28,24 @@ In the console type this function ( ```getElementByScopeId('002')``` ) and the c
 
 ``` > <div class="wrap" ng-controller="MyCtrl">...</div> ```
 
-## CODE
+## CODE TO PUT IN BOOKMARK:URL FIELD
 
 ~~~
 javascript:console.info("Script ready, now use getElementByScopeId('id')");function getElementByScopeId(scopeId) {var i; var scopesInDom = angular.element('.ng-scope'); for (i=0; i < scopesInDom.length; i++) {if (angular.element(scopesInDom[i]).scope().$id === scopeId) { return scopesInDom[i]; } } };
+~~~
+
+## PRETIFIED CODE
+
+~~~
+javascript: console.info("Script ready, now use getElementByScopeId('id')");
+
+function getElementByScopeId(scopeId) {
+    var i;
+    var scopesInDom = angular.element('.ng-scope');
+    for (i = 0; i < scopesInDom.length; i++) {
+        if (angular.element(scopesInDom[i]).scope().$id === scopeId) {
+            return scopesInDom[i];
+        }
+    }
+};
 ~~~
