@@ -7,7 +7,7 @@ AngularJS Get an element by inputting the Scope ID (which can be found from Angu
 
 1. Create a favourite in Chrome (it can be of anything, this page for instance) and add it to the bookmark bar.
 2. Now edit it and rename it to something helpful, I've called mine AngularJS Scope ID
-3. While editing copy the contents from script.txt and place it in the url field.
+3. While editing copy the contents from script.txt or below and place it in the url field.
 
 ## USAGE
 
@@ -27,3 +27,9 @@ In the console type this function ( ```getElementByScopeId('002')``` ) and the c
 
 
 ``` > <div class="wrap" ng-controller="MyCtrl">...</div> ```
+
+## CODE
+
+~~~
+javascript:console.info("Script ready, now use getElementByScopeId('id')");function getElementByScopeId(scopeId) {var i; var scopesInDom = angular.element('.ng-scope'); for (i=0; i < scopesInDom.length; i++) {if (angular.element(scopesInDom[i]).scope().$id === scopeId) { return scopesInDom[i]; } } };
+~~~
